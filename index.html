@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <meta
+      name="theme-color"
+      content="#07090d"
+    />
+
+    <meta
+      name="description"
+      content="VOLT — Power Your Game. Games, consoles e acessórios para quem leva o gameplay a sério."
+    />
+
+    <title>VOLT — Power Your Game</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              volt: "#d9ff00"
+            }
+          }
+        }
+      };
+    </script>
+
+    <!-- Fonte -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #07090d;
+        color: white;
+        min-width: 320px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #07090d;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #d9ff00;
+        border-radius: 20px;
+      }
+
+      ::selection {
+        background: #d9ff00;
+        color: #07090d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- O React será renderizado aqui -->
+    <div id="root"></div>
+
+    <!-- Entrada principal do React -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
